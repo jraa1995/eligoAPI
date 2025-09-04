@@ -1,0 +1,32 @@
+# Ignore VCS & metadata
+.git
+.gitignore
+
+# Python noise
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.pytest_cache/
+
+# Local-only stuff
+.venv
+env
+venv
+*.log
+logs/
+tmp/
+data/
+*.db
+*.sqlite*
+eligibility.db
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+secrets.json
+
+# Tests, docs (optional)
+tests/
+docs/

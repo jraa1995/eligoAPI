@@ -1,0 +1,60 @@
+# --- Python / FastAPI ---
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.pytest_cache/
+.coverage*
+htmlcov/
+.cache/
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.code-workspace
+
+# Logs & runtime
+logs/
+*.log
+*.pid
+*.out
+
+# Local data & databases
+eligibility.db
+*.sqlite
+*.sqlite3
+data/
+tmp/
+*.db
+
+# Secrets & env files
+.env
+.env.*         # keep all env variants ignored…
+!.env.example  # …but allow the template to be committed
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+secrets.json
+
+# CSVs (keep fixtures allowed)
+*.csv
+!fixtures/*.csv
+
+# Docker / compose overrides
+docker-compose.override.yml
