@@ -58,8 +58,6 @@ async def require_admin(x_admin_key: str | None = Header(default=None)) -> bool:
         raise HTTPException(status_code=401, detail="invalid admin key")
     return True
 
-
-# Use lifespan instead of deprecated on_event startup/shutdown
 async def _lifespan(app: FastAPI):
     # Start background worker
     worker_task = asyncio.create_task(worker_loop())
